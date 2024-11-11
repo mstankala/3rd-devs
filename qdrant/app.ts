@@ -15,7 +15,7 @@ const openaiService = new OpenAIService();
 const assistantService = new AssistantService(openaiService, langfuseService);
 const vectorService = new VectorService(openaiService);
 
-const COLLECTION_NAME = "aidevs";
+const COLLECTION_NAME = "ai_devs_3";
 
 app.post('/api/chat', async (req, res) => {
   let { messages, conversation_id = uuidv4() } = req.body;

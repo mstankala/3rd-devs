@@ -1,0 +1,16 @@
+### GET request to example server
+# curl -X POST http://localhost:3000/api/chat
+#    -H "Content-Type: application/json"
+#    -d '{"messages": [{"role": "user", "content": "Hey there, what\'s up?"}], "conversation_id": "d7582176-bc52-4ef3-980a-047b868f9f49"}'
+POST http://localhost:3000/api/chat
+Content-Type: application/json
+
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Do I have pets?"
+    }
+  ]
+}
+
