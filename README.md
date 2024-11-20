@@ -372,9 +372,19 @@ Natomiast klucz API można pobrać w zakładce "Data Access Control".
 ### Semantic
 
 - Uruchomienie kodu: `bun semantic`
-- Interakcja: przykład wykonuje się automatycznie na pliku source.md z katalogu "semantic"
+- Interakcja: przykład wykonuje się automatycznie na danych osadzonych w pliku semantic/app.ts
 
 ## S03E03
+
+### Algolia
+
+Do uruchomienia tego przykładu konieczne jest uzupełnienie `ALGOLIA_APP_ID` oraz `ALGOLIA_API_KEY` w pliku `.env`.
+**UWAGA**: przy pierwszym uruchomieniu przykładu pojawi się błąd ale spowoduje to utworzenie indeksu w Algolia. Wówczas należy przejść do panelu Algolia i w zakładce "Facets" dodać nowy facet o nazwie `author`.
+
+![](https://cloud.overment.com/2024-11-20/aidevs3_algolia-09eeb970-2.png)
+
+- Uruchomienie kodu: `bun algolia`
+- Interakcja: przykład wykonuje się automatycznie na danych osadzonych w pliku algolia/app.ts
 
 ### Sync
 
